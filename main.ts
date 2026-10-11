@@ -31,8 +31,8 @@ let radius = 1;
 const baseBpm = settings.bpm;
 let bpm = settings.bpm;
 let angleOffset = -180;
-let lastRed = -1;
-let lastBlue = -1;
+let lastRed = -2;
+let lastBlue = -2;
 const actionBuckets: Action[][] = [];
 for (const action of actions) (actionBuckets[action.floor] ??= []).push(action);
 let lastRotation = 0;
@@ -243,7 +243,7 @@ for (let i = 0; i <= angleData.length; i++) {
         lastActualAngle = actualAngle;
         lastPosition = rotate(rawCurrentPosition, deg2rad(-lastRotation));
         lastIsCCW = isCCW;
-        if ((i % 2 === 0 ? lastBlue : lastRed) !== -1)
+        if ((i % 2 === 0 ? lastBlue : lastRed) !== -2)
             actions.push(
                 createMoveDecorations({
                     floor: 1,
@@ -253,7 +253,7 @@ for (let i = 0; i <= angleData.length; i++) {
                     angleOffset,
                 }),
             );
-        if ((i % 2 === 0 ? lastRed : lastBlue) !== -1)
+        if ((i % 2 === 0 ? lastRed : lastBlue) !== -2)
             actions.push(
                 createMoveDecorations({
                     floor: 1,
@@ -311,4 +311,4 @@ for (let i = 0; i <= angleData.length; i++) {
     }
     decorations.push(tile);
 }
-writeLevel("public/output.adofai", level);
+writeLevel("public/output2.adofai", level);
