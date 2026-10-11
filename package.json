@@ -1,0 +1,27 @@
+{
+  "name": "adofai-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.9.0",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.9.0",
+  "type": "module",
+  "dependencies": {
+    "@types/node": "^26.6.4",
+    "tsup": "^8.5.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

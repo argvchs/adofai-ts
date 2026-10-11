@@ -1,0 +1,15 @@
+export type TrackIcon =
+    | "None"
+    | "Snail"
+    | "DoubleSnail"
+    | "Rabbit"
+    | "DoubleRabbit"
+    | "Swirl"
+    | "Checkpoint"
+    | "HoldArrowShort"
+    | "HoldArrowLong"
+    | "HoldReleaseShort"
+    | "HoldReleaseLong"
+    | "MultiPlanetTwo"
+    | "MultiPlanetThreeMore"
+    | "Portal";
