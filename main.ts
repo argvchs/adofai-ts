@@ -311,4 +311,4 @@ for (let i = 0; i <= angleData.length; i++) {
     }
     decorations.push(tile);
 }
-writeLevel("public/output2.adofai", level);
+writeLevel("public/output.adofai", level);
